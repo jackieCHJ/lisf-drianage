@@ -105,12 +105,7 @@ module HYMAP_parmsMod
      type(LDT_paramEntry) :: hymap_baseflow_dwi_ratio
      type(LDT_paramEntry) :: hymap_runoff_dwi_ratio
      !pipe 变量
-     type(LDT_paramEntry) :: hymap_urban_drainage_outlet
-     type(LDT_paramEntry) :: hymap_urban_drlgh
-     type(LDT_paramEntry) :: hymap_urban_drman
-     type(LDT_paramEntry) :: hymap_urban_drrad
-     type(LDT_paramEntry) :: hymap_urban_inletarea
-     type(LDT_paramEntry) :: hymap_urban_drslp
+
 
      type(LDT_paramEntry) :: hymap_urban_drainage_outlet
      type(LDT_paramEntry) :: hymap_urban_drrad
