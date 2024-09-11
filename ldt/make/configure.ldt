@@ -1,0 +1,30 @@
+FC              = gfortran
+FC77            = gfortran
+LD              = gfortran
+CC              = gcc
+AR              = ar
+MOD_ESMF        = /opt/esmf/mod/modO/Linux.gfortran.64.mpiuni.default
+LIB_ESMF        = /opt/esmf/lib/libO/Linux.gfortran.64.mpiuni.default
+INC_JPEG2000      = /usr/include/
+LIB_JPEG2000      = /usr/lib/x86_64-linux-gnu/
+INC_ECCODES     = /usr/lib/x86_64-linux-gnu/fortran/gfortran-mod-15/
+LIB_ECCODES     = /usr/lib/x86_64-linux-gnu/
+INC_NETCDF      = /usr/include/
+LIB_NETCDF      = /usr/lib/x86_64-linux-gnu/
+INC_HDF4        = /usr/local/include/
+LIB_HDF4        = /usr/local/lib/
+INC_HDF5        = 
+LIB_HDF5        = 
+INC_HDFEOS      = /usr/local/include/
+LIB_HDFEOS      = /usr/local/lib/
+
+INC_FORTRANGIS1 = 
+INC_FORTRANGIS2 = 
+LIB_FORTRANGIS  = 
+INC_LIBGEOTIFF  = 
+LIB_LIBGEOTIFF  = 
+LIB_GDAL        = 
+CFLAGS          = -c -DGFORTRAN 
+FFLAGS77        = -c -pass-exit-codes -O2   -fconvert=big-endian -DGFORTRAN -I$(MOD_ESMF)  -I$(INC_ECCODES) -I$(INC_NETCDF)  -I$(INC_HDFEOS)  -I$(INC_HDF4)
+FFLAGS          =  -c -pass-exit-codes -ffree-line-length-0 -O2   -fconvert=big-endian -DGFORTRAN -I$(MOD_ESMF)  -I$(INC_ECCODES) -I$(INC_NETCDF)  -I$(INC_HDFEOS)  -I$(INC_HDF4)
+LDFLAGS         =  -L$(LIB_ESMF) -lesmf -lstdc++ -lz  -L$(LIB_ECCODES) -leccodes_f90 -leccodes -L$(LIB_JPEG2000) -ljasper -L$(LIB_NETCDF) -lnetcdff -lnetcdf -L$(LIB_HDFEOS) -lhdfeos -lGctp -L$(LIB_HDF4) -lmfhdf -ldf -ljpeg -lz  -ldl
