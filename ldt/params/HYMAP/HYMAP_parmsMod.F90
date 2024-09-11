@@ -83,12 +83,6 @@ module HYMAP_parmsMod
      character(len=LDT_CONST_PATH_LEN) :: urban_inletareafile
      character(len=LDT_CONST_PATH_LEN) :: urban_drslpfile
 
-     character(len=LDT_CONST_PATH_LEN) :: urban_drainage_outletfile
-     character(len=LDT_CONST_PATH_LEN) :: urban_drradfile
-     character(len=LDT_CONST_PATH_LEN) :: urban_drlghfile
-     character(len=LDT_CONST_PATH_LEN) :: urban_inletareafile
-     character(len=LDT_CONST_PATH_LEN) :: urban_drmanfile
-     character(len=LDT_CONST_PATH_LEN) :: urban_drslpfile
 
      type(LDT_paramEntry) :: hymap_river_width
      type(LDT_paramEntry) :: hymap_river_height
